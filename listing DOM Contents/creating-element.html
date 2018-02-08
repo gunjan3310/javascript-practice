@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating DOM elements</title>
+
+</head>
+<body>
+<div id="heading">
+	
+</div>
+</body>
+<script>
+		var heading = document.createElement("h1");
+		var headingText = document.createTextNode("Gunjan Yadav - Generated");
+		heading.appendChild(headingText);
+		document.getElementById("heading").appendChild(heading);
+	</script>
+</html>

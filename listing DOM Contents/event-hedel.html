@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating DOM elements</title>
+
+</head>
+<body>
+<input type="button" id="button" value="Click Me" />
+<div id="heading">
+	
+</div>
+</body>
+<script>
+	document.getElementById("button").onclick = function(){
+		var heading = document.createElement("h1");
+		var headingText = document.createTextNode("Gunjan Yadav - Generated");
+		heading.appendChild(headingText);
+		document.getElementById("heading").appendChild(heading);
+	}
+</script>
+</html>

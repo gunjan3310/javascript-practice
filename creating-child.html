@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating-child</title>
+</head>
+<body>
+<ul id="ul1">
+    <li>Gunjan</li>
+    <li>Yadav</li>
+    <li>Roshan</li>
+    <li>Rahul</li>
+</ul>
+<ul id="ul2">
+    <li>Gunjan</li>
+    <li>Yadav</li>
+    <li>Roshan</li>
+    <li>Rahul</li>
+</ul>
+</body>
+
+<script>
+	var child = document.getElementById("ul1");
+	var parent_ul = document.getElementById("ul2");
+
+	parent_ul.insertBefore(child,parent_ul.children[1]);
+</script>
+</html>
